@@ -58,7 +58,7 @@ The `database.sqlite` contains the following tables:
 
 - Analyzing player performance trends over time:
     ```sql
-    SELECT p.name, pa.date, pa.overall_rating
+    SELECT p.player_name, pa.date, pa.overall_rating
     FROM Player p
     JOIN Player_Attributes pa ON p.player_api_id = pa.player_api_id
     ORDER BY pa.date;
